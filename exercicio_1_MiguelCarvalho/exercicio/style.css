@@ -1,101 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     background-color: #bb9f80;
     color: #fff;
 }
-.menu-head h1{
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.menu-head h2 {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.6rem;
 }
 
-.header{
-    text-align: center;
-}
-.container{
-    text-align: center;
-    width: 100%;
-    padding: 20px 30%;
+.container {
+    margin: 20px 20%;
 }
 
-.nav_button{
-    margin-top:15px;
-    padding: 5px 20px;
-    background-color: #a97a3c;
+.text-center {
+    text-align: center;
+}
+
+.nav-button {
+    padding: 4px 30px;
     color: white;
+    background-color: #367915;
+    border: 2px solid #012707;
     font-weight: bold;
-    border: 0;
-    align-items: center;
-    text-align: center;
 }
 
-.card{
-    background-color:white;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    padding: 10px;
-    align-items:left;
-    flex: 1 1 auto;
-
-    margin: 16px;
-
-    
-}
-.card-body {
-    margin-left: 10px;
+#items {
+    padding: 2px;
 }
 
-
-#itens{
-    background-color: rgb(213, 53, 53);
-    margin: 10px;
-    
-    
-    
-}
-.item{
-    width: 50%;
-    display: flex;
-    padding:1%;
-    float: left;
-    background-color: aliceblue;
-}
-.item .item-img{
-width: 30%;
-background-color:green;
-height: 100%;
-display: flex;
-margin: 1%;
-}
-
-.item .item-info{
+.item {
     text-align: left;
-    padding-left:10px;
-    width: 70%;
-    margin: auto;
+    background-color: white;
+    width: 48%;
     color: black;
-    }
+    padding: 5px;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 5px rgb(0 0 0 / 15%);
+    float: left;
+    margin:1%;
+    height: 150px;
+}
 
-    .br-small{
-        border-radius: 12px;
-    }
-    .item-info .info-h1{
-        color: orange;
-        text-decoration: underline;
-    }
+.item .item-img {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 12px;
+}
 
-    .item .item-info .info-category{
-        font-size: 12px;
-        margin-top: 5px;
-    }
+.item-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.item .item-content {
+    width: 70%;
+    padding-left:10px;
+    margin: auto;
+}
+
+.item-content h2{
+    color: orange;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.item-content .rating{
+    color: #2109bd;
+}
 
 
 
