@@ -2,16 +2,18 @@
 // Weather api key: https://home.openweathermap.org/users/sign_in || a9e49b305a5d14cc0790dbf507251ca1
 
 function requestFlickrApi() {
+  const inputFlicrk = document.getElementById('imageSearchID')
     const requestOptions = {
       method: 'GET', // GET, POST, PUT, DELETE
 
     }
     const requestBody={
       method :'flickr.photos.search',
-      api_key:'5dfa044339f2b6f8847ab60c3fec5d49',
+      api_key:'31fa894fb022e80a7ea363cb781d1692',
       extras : 'url_l',
       per_peg: 5,
-      text: 'json',
+      text: inputFlicrk.value,
+      format : 'json',
       nojsoncallback:1
     }
 
